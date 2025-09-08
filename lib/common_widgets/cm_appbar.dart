@@ -1,9 +1,9 @@
-import 'package:doc_ui/models/doc.dart';
-import 'package:doc_ui/doc_clippers.dart';
+import 'package:doc_ui/constants/my_color.dart';
+import 'package:doc_ui/widgets/my_clippers.dart';
 import 'package:flutter/material.dart';
 
-class CommonAppbar extends StatelessWidget {
-  const CommonAppbar({super.key, required this.color});
+class CmAppbar extends StatelessWidget {
+  const CmAppbar({super.key, required this.color});
   final Color color;
 
   @override
@@ -13,7 +13,7 @@ class CommonAppbar extends StatelessWidget {
       children: [
         Positioned.fill(
           child: ClipPath(
-            clipper: DocHAppbarClip(),
+            clipper: MyClipperAppbarClip(),
             child: Container(
               alignment: Alignment.center,
               color: color,
@@ -21,12 +21,12 @@ class CommonAppbar extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Image.asset('assets/mydoc/doc_icon/cloud1.png',
-                      color: buttonColor,
+                      color: MyColor.buttonColor,
                       width: 30,
                       height: 30,
                       fit: BoxFit.contain),
                   const SizedBox(width: 1),
-                  const Icon(Icons.menu, color: buttonColor),
+                  const Icon(Icons.menu, color: MyColor.buttonColor),
                 ],
               ),
             ),

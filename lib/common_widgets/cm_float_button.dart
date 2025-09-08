@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CommonFloatButton extends StatelessWidget {
-  const CommonFloatButton(
+class CmFloatButton extends StatelessWidget {
+  const CmFloatButton(
       {super.key,
       required this.floatColor,
       required this.floawShadow,

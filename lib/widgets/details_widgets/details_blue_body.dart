@@ -1,4 +1,5 @@
-import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/constants/my_color.dart';
+import 'package:doc_ui/constants/my_contants.dart';
 import 'package:flutter/material.dart';
 
 class DetailsBlueBody extends StatelessWidget {
@@ -13,7 +14,7 @@ class DetailsBlueBody extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
-          colors: [blueMDark, blueDark],
+          colors: [MyColor.blueMDark, MyColor.blueDark],
         ),
       ),
       child: ListView.builder(
@@ -37,14 +38,16 @@ class DetailsBlueBody extends StatelessWidget {
                     begin: Alignment.bottomLeft,
                     end: Alignment.topRight,
                     colors: [
-                      isTrue ? dFloatColor : dFloatColor.withOpacity(0.4),
-                      blueDark.withOpacity(0.9),
-                      blueDark,
+                      isTrue
+                          ? MyColor.dFloatColor
+                          : MyColor.dFloatColor.withOpacity(0.4),
+                      MyColor.blueDark.withOpacity(0.9),
+                      MyColor.blueDark,
                     ],
                   ),
                   boxShadow: const [
                     BoxShadow(
-                      color: blueDark,
+                      color: MyColor.blueDark,
                       offset: Offset(0, 1),
                       blurRadius: 20,
                       spreadRadius: 1,
@@ -61,7 +64,7 @@ class DetailsBlueBody extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        '${myDocs.length - i}',
+                        '${MyContants.myDocs.length - i}',
                         style: TextStyle(
                             fontWeight:
                                 isTrue ? FontWeight.w900 : FontWeight.normal,

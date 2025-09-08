@@ -1,4 +1,4 @@
-import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/constants/my_color.dart';
 import 'package:doc_ui/widgets/home_widgets/home_search_field.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +26,7 @@ class HomeBlueBody extends StatelessWidget {
                     boxShadow: const [
                       BoxShadow(
                         offset: Offset(-5, 3),
-                        color: blueDark,
+                        color: MyColor.blueDark,
                         spreadRadius: 2,
                         blurRadius: 70,
                       ),
@@ -44,21 +44,21 @@ class HomeBlueBody extends StatelessWidget {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          blueLight,
-                          blueMDark.withOpacity(0.6),
-                          blueDark,
+                          MyColor.blueLight,
+                          MyColor.blueMDark.withOpacity(0.6),
+                          MyColor.blueDark,
                         ],
                       ),
                       boxShadow: const [
                         BoxShadow(
                           offset: Offset(-5, 5),
-                          color: blueDark,
+                          color: MyColor.blueDark,
                           spreadRadius: 2,
                           blurRadius: 20,
                         ),
                         BoxShadow(
                           offset: Offset(1, -1),
-                          color: dFloatColor,
+                          color: MyColor.dFloatColor,
                           spreadRadius: 2,
                           blurRadius: 10,
                         ),
@@ -76,7 +76,7 @@ class HomeBlueBody extends StatelessWidget {
                               padding: const EdgeInsets.all(10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(14),
-                                color: blueDark,
+                                color: MyColor.blueDark,
                               ),
                               child: Image.asset(
                                   'assets/mydoc/doc_icon/record.png',
@@ -98,7 +98,8 @@ class HomeBlueBody extends StatelessWidget {
                                   Text(
                                     '3247 files,26 folder',
                                     style: TextStyle(
-                                        fontSize: 11, color: buttonColor2),
+                                        fontSize: 11,
+                                        color: MyColor.buttonColor2),
                                   ),
                                 ],
                               ),
@@ -111,7 +112,7 @@ class HomeBlueBody extends StatelessWidget {
                           height: 4,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: blueDark,
+                            color: MyColor.blueDark,
                           ),
                           child: Row(
                             children: [
@@ -120,7 +121,7 @@ class HomeBlueBody extends StatelessWidget {
                                 height: 4,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  color: ashhLight,
+                                  color: MyColor.ashhLight,
                                 ),
                               ),
                               const Spacer(),
@@ -134,8 +135,8 @@ class HomeBlueBody extends StatelessWidget {
                             Spacer(),
                             Text(
                               '60 GB free',
-                              style:
-                                  TextStyle(fontSize: 11, color: buttonColor2),
+                              style: TextStyle(
+                                  fontSize: 11, color: MyColor.buttonColor2),
                             ),
                           ],
                         ),
@@ -149,7 +150,7 @@ class HomeBlueBody extends StatelessWidget {
                 width: 80,
                 margin: const EdgeInsets.only(top: 40),
                 decoration: const BoxDecoration(
-                  color: blueDark,
+                  color: MyColor.blueDark,
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(15)),
                 ),
                 child: ListView.builder(
@@ -160,7 +161,7 @@ class HomeBlueBody extends StatelessWidget {
                     height: 45,
                     margin: const EdgeInsets.symmetric(vertical: 7),
                     decoration: BoxDecoration(
-                      color: blueLight,
+                      color: MyColor.blueLight,
                       borderRadius: BorderRadius.circular(15),
                     ),
                   ),

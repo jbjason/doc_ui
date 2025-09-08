@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DocHAppbarClip extends CustomClipper<Path> {
+class MyClipperAppbarClip extends CustomClipper<Path> {
   @override
   getClip(Size size) {
     final path = Path();
@@ -44,7 +44,7 @@ class DocHAppbarClip extends CustomClipper<Path> {
   bool shouldReclip(covariant CustomClipper oldClipper) => false;
 }
 
-class DocHBodyClip extends CustomClipper<Path> {
+class MyClipperBodyClip extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     final path = Path();
@@ -65,7 +65,7 @@ class DocHBodyClip extends CustomClipper<Path> {
   bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;
 }
 
-class DocHNavBarClip extends CustomClipper<Path> {
+class MyClipperNavBarClip extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     final path = Path();
@@ -111,7 +111,7 @@ class DocHNavBarClip extends CustomClipper<Path> {
   bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;
 }
 
-class DocDBodyClip extends CustomClipper<Path> {
+class MyClipperDetailsBodyClip extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     final path = Path();

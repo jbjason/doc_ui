@@ -1,6 +1,6 @@
-import 'package:doc_ui/common_widgets/common_appbar.dart';
-import 'package:doc_ui/common_widgets/common_navbar.dart';
-import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/common_widgets/cm_appbar.dart';
+import 'package:doc_ui/common_widgets/cm_navbar.dart';
+import 'package:doc_ui/constants/my_color.dart';
 import 'package:doc_ui/widgets/home_widgets/home_blue_body.dart';
 import 'package:doc_ui/widgets/home_widgets/home_white_body.dart';
 import 'package:flutter/material.dart';
@@ -12,14 +12,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: blueLight,
+      backgroundColor: MyColor.blueLight,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           // AppBar
           const SizedBox(
             height: kToolbarHeight + 60,
-            child: CommonAppbar(color: blueMDark),
+            child: CmAppbar(color: MyColor.blueMDark),
           ),
           // body
           Expanded(
@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                   child: Container(
                     decoration: const BoxDecoration(boxShadow: [
                       BoxShadow(
-                        color: ashDark,
+                        color: MyColor.ashDark,
                         spreadRadius: 2,
                         blurRadius: 50,
                       ),
@@ -63,12 +63,12 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       extendBody: true,
-      bottomNavigationBar: const CommonNavbar(
+      bottomNavigationBar: const CmNavbar(
         screen: 'home',
-        navColor: ashDark,
-        floatShadow: [Colors.white, dFloatColor],
-        floatColor: blueLight,
-        floatBackColor: ashhLight,
+        navColor: MyColor.ashDark,
+        floatShadow: [Colors.white, MyColor.dFloatColor],
+        floatColor: MyColor.blueLight,
+        floatBackColor: MyColor.ashhLight,
       ),
     );
   }

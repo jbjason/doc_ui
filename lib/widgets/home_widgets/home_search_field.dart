@@ -1,4 +1,4 @@
-import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/constants/my_color.dart';
 import 'package:flutter/material.dart';
 
 class HomeSearchField extends StatelessWidget {
@@ -15,13 +15,13 @@ class HomeSearchField extends StatelessWidget {
           borderRadius: BorderRadius.circular(30),
           boxShadow: [
             BoxShadow(
-              color: dFloatColor.withOpacity(.3),
+              color: MyColor.dFloatColor.withOpacity(.3),
               offset: const Offset(-0.5, 0.5),
               blurRadius: 1.0,
               spreadRadius: 1.0,
             ),
             const BoxShadow(
-              color: blueDark,
+              color: MyColor.blueDark,
               offset: Offset(1.5, -2.5),
               blurRadius: 1.0,
               spreadRadius: 2.5,
@@ -33,13 +33,13 @@ class HomeSearchField extends StatelessWidget {
             borderRadius: BorderRadius.circular(40),
             boxShadow: [
               BoxShadow(
-                color: dFloatColor.withOpacity(.3),
+                color: MyColor.dFloatColor.withOpacity(.3),
                 offset: const Offset(-0.5, 0.5),
                 blurRadius: 1.0,
                 spreadRadius: 1.0,
               ),
               BoxShadow(
-                color: searchColor.withOpacity(0.3),
+                color: MyColor.searchColor.withOpacity(0.3),
                 offset: const Offset(5.0, -5.0),
                 blurRadius: 1.0,
                 spreadRadius: 1.0,
@@ -47,27 +47,27 @@ class HomeSearchField extends StatelessWidget {
             ],
             gradient: LinearGradient(
               colors: [
-                searchColor,
-                searchColor.withOpacity(0.8),
-                searchColor.withOpacity(0.5),
-                searchColor.withOpacity(0.3),
+                MyColor.searchColor,
+                MyColor.searchColor.withOpacity(0.8),
+                MyColor.searchColor.withOpacity(0.5),
+                MyColor.searchColor.withOpacity(0.3),
               ],
             ),
           ),
           child: const TextField(
             textAlign: TextAlign.start,
-            style: TextStyle(color: ashhLight),
-            cursorColor: buttonColor,
+            style: TextStyle(color: MyColor.ashhLight),
+            cursorColor: MyColor.buttonColor,
             decoration: InputDecoration(
               fillColor: Colors.red,
               labelText: 'Search...',
               labelStyle: TextStyle(
                 fontSize: 13, // or whatever
                 height: 1,
-                color: ashhLight,
+                color: MyColor.ashhLight,
               ),
               border: InputBorder.none,
-              suffixIcon: Icon(Icons.search, color: buttonColor),
+              suffixIcon: Icon(Icons.search, color: MyColor.buttonColor),
               contentPadding: EdgeInsets.symmetric(horizontal: 20),
             ),
           ),

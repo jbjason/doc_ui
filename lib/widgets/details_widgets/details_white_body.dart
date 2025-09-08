@@ -1,6 +1,6 @@
-import 'package:doc_ui/common_widgets/common_body_gridview.dart';
-import 'package:doc_ui/models/doc.dart';
-import 'package:doc_ui/doc_clippers.dart';
+import 'package:doc_ui/common_widgets/cm_body_gridview.dart';
+import 'package:doc_ui/constants/my_color.dart';
+import 'package:doc_ui/widgets/my_clippers.dart';
 import 'package:flutter/material.dart';
 
 class DetailsWhiteBody extends StatelessWidget {
@@ -13,12 +13,14 @@ class DetailsWhiteBody extends StatelessWidget {
       children: [
         Positioned.fill(
           child: ClipPath(
-              clipper: DocDBodyClip(), child: Container(color: buttonColor)),
+            clipper: MyClipperDetailsBodyClip(),
+            child: Container(color: MyColor.buttonColor),
+          ),
         ),
         Positioned.fill(
           bottom: 5,
           child: ClipPath(
-            clipper: DocDBodyClip(),
+            clipper: MyClipperDetailsBodyClip(),
             child: Container(
               padding: EdgeInsets.only(
                   bottom: size.height * .1, left: 25, right: 25, top: 10),
@@ -27,14 +29,14 @@ class DetailsWhiteBody extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    ashDark.withOpacity(0.4),
-                    ashDark.withOpacity(0.5),
-                    ashDark.withOpacity(0.6),
-                    blueLight.withOpacity(0.7),
+                    MyColor.ashDark.withOpacity(0.4),
+                    MyColor.ashDark.withOpacity(0.5),
+                    MyColor.ashDark.withOpacity(0.6),
+                    MyColor.blueLight.withOpacity(0.7),
                   ],
                 ),
               ),
-              child: const CommonBodyGridview(screen: 'det'),
+              child: const CmBodyGridview(screen: 'det'),
             ),
           ),
         ),

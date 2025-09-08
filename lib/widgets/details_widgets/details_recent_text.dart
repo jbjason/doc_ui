@@ -1,4 +1,4 @@
-import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/constants/my_color.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -14,23 +14,23 @@ class DetailsRecentText extends StatelessWidget {
         children: [
           Row(
             children: const [
-              Icon(CupertinoIcons.clock, size: 20, color: buttonColor2),
+              Icon(CupertinoIcons.clock, size: 20, color: MyColor.buttonColor2),
               SizedBox(width: 5),
               Text(
                 'Recent',
                 style: TextStyle(
                     fontSize: 11,
-                    color: buttonColor2,
+                    color: MyColor.buttonColor2,
                     fontWeight: FontWeight.bold),
               )
             ],
           ),
           Row(
             children: const [
-              Icon(Icons.menu_outlined, size: 20, color: buttonColor2),
+              Icon(Icons.menu_outlined, size: 20, color: MyColor.buttonColor2),
               SizedBox(width: 5),
               Icon(CupertinoIcons.square_grid_4x3_fill,
-                  size: 20, color: buttonColor2),
+                  size: 20, color: MyColor.buttonColor2),
             ],
           )
         ],

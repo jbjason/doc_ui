@@ -1,6 +1,6 @@
-import 'package:doc_ui/common_widgets/common_appbar.dart';
-import 'package:doc_ui/common_widgets/common_navbar.dart';
-import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/common_widgets/cm_appbar.dart';
+import 'package:doc_ui/common_widgets/cm_navbar.dart';
+import 'package:doc_ui/constants/my_color.dart';
 import 'package:doc_ui/widgets/details_widgets/details_blue_body.dart';
 import 'package:doc_ui/widgets/details_widgets/details_recent_text.dart';
 import 'package:doc_ui/widgets/details_widgets/details_white_body.dart';
@@ -13,14 +13,14 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: ashhLight,
+      backgroundColor: MyColor.ashhLight,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           // AppBar
           const SizedBox(
             height: kToolbarHeight + 60,
-            child: CommonAppbar(color: ashDark),
+            child: CmAppbar(color: MyColor.ashDark),
           ),
           const DetailsRecentText(),
           Expanded(
@@ -49,12 +49,12 @@ class DetailsScreen extends StatelessWidget {
         ],
       ),
       extendBody: true,
-      bottomNavigationBar: CommonNavbar(
+      bottomNavigationBar: CmNavbar(
         screen: 'details',
-        navColor: blueDark,
-        floatBackColor: blueDark,
-        floatColor: dFloatColor,
-        floatShadow: [blueDark, dFloatColor.withOpacity(0.6)],
+        navColor: MyColor.blueDark,
+        floatBackColor: MyColor.blueDark,
+        floatColor: MyColor.dFloatColor,
+        floatShadow: [MyColor.blueDark, MyColor.dFloatColor.withOpacity(0.6)],
       ),
     );
   }
