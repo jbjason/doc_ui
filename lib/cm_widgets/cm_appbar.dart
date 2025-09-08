@@ -1,4 +1,5 @@
 import 'package:doc_ui/constants/my_color.dart';
+import 'package:doc_ui/constants/my_image.dart';
 import 'package:doc_ui/widgets/my_clippers.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +21,7 @@ class CmAppbar extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Image.asset('assets/mydoc/doc_icon/cloud1.png',
+                  Image.asset(MyImage.cloud1Img,
                       color: MyColor.buttonColor,
                       width: 30,
                       height: 30,
@@ -38,7 +39,7 @@ class CmAppbar extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(5),
             decoration: BoxDecoration(shape: BoxShape.circle, color: color),
-            child: Image.asset('assets/mydoc/icon/user1.png',
+            child: Image.asset(MyImage.user1Img,
                 width: 30, height: 30, fit: BoxFit.contain),
           ),
         ),

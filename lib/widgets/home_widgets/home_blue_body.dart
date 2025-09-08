@@ -1,4 +1,5 @@
 import 'package:doc_ui/constants/my_color.dart';
+import 'package:doc_ui/constants/my_image.dart';
 import 'package:doc_ui/widgets/home_widgets/home_search_field.dart';
 import 'package:flutter/material.dart';
 
@@ -78,8 +79,7 @@ class HomeBlueBody extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(14),
                                 color: MyColor.blueDark,
                               ),
-                              child: Image.asset(
-                                  'assets/mydoc/doc_icon/record.png',
+                              child: Image.asset(MyImage.recordImg,
                                   fit: BoxFit.cover),
                             ),
                             Expanded(

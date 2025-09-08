@@ -1,3 +1,4 @@
+import 'package:doc_ui/constants/my_image.dart';
 import 'package:flutter/material.dart';
 
 class CmFloatButton extends StatelessWidget {
@@ -36,8 +37,8 @@ class CmFloatButton extends StatelessWidget {
             ),
           ],
         ),
-        child: Image.asset('assets/mydoc/doc_icon/site.png',
-            color: floatColor, fit: BoxFit.cover),
+        child:
+            Image.asset(MyImage.siteImg, color: floatColor, fit: BoxFit.cover),
       ),
     );
   }

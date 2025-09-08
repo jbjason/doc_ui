@@ -1,5 +1,5 @@
-import 'package:doc_ui/common_widgets/cm_appbar.dart';
-import 'package:doc_ui/common_widgets/cm_navbar.dart';
+import 'package:doc_ui/cm_widgets/cm_appbar.dart';
+import 'package:doc_ui/cm_widgets/cm_navbar.dart';
 import 'package:doc_ui/constants/my_color.dart';
 import 'package:doc_ui/widgets/details_widgets/details_blue_body.dart';
 import 'package:doc_ui/widgets/details_widgets/details_recent_text.dart';

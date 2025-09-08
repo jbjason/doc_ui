@@ -1,5 +1,6 @@
-import 'package:doc_ui/common_widgets/cm_float_button.dart';
+import 'package:doc_ui/cm_widgets/cm_float_button.dart';
 import 'package:doc_ui/constants/my_color.dart';
+import 'package:doc_ui/constants/my_image.dart';
 import 'package:doc_ui/widgets/my_clippers.dart';
 import 'package:doc_ui/screens/details_screen.dart';
 import 'package:doc_ui/screens/home_screen.dart';
@@ -54,7 +55,7 @@ class CmNavbar extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (_) => const HomeScreen()));
                       },
-                      child: Image.asset('assets/mydoc/icon/home.png',
+                      child: Image.asset(MyImage.homeImg,
                           color: MyColor.buttonColor,
                           width: 30,
                           height: 30,

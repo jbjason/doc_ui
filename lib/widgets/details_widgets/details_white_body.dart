@@ -1,4 +1,4 @@
-import 'package:doc_ui/common_widgets/cm_body_gridview.dart';
+import 'package:doc_ui/cm_widgets/cm_body_gridview.dart';
 import 'package:doc_ui/constants/my_color.dart';
 import 'package:doc_ui/widgets/my_clippers.dart';
 import 'package:flutter/material.dart';
