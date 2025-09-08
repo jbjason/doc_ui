@@ -1,8 +1,8 @@
-import 'package:doc_ui/doc.dart';
+import 'package:doc_ui/models/doc.dart';
 import 'package:flutter/material.dart';
 
-class DocHSearchField extends StatelessWidget {
-  const DocHSearchField({super.key});
+class HomeSearchField extends StatelessWidget {
+  const HomeSearchField({super.key});
 
   @override
   Widget build(BuildContext context) {

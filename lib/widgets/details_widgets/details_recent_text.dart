@@ -1,9 +1,9 @@
-import 'package:doc_ui/doc.dart';
+import 'package:doc_ui/models/doc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class DocDRecentText extends StatelessWidget {
-  const DocDRecentText({super.key});
+class DetailsRecentText extends StatelessWidget {
+  const DetailsRecentText({super.key});
 
   @override
   Widget build(BuildContext context) {

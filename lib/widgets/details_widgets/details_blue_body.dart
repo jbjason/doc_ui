@@ -1,8 +1,8 @@
-import 'package:doc_ui/doc.dart';
+import 'package:doc_ui/models/doc.dart';
 import 'package:flutter/material.dart';
 
-class DocDBlueBody extends StatelessWidget {
-  const DocDBlueBody({super.key});
+class DetailsBlueBody extends StatelessWidget {
+  const DetailsBlueBody({super.key});
 
   @override
   Widget build(BuildContext context) {

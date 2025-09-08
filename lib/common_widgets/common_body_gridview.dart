@@ -1,8 +1,8 @@
-import 'package:doc_ui/doc.dart';
+import 'package:doc_ui/models/doc.dart';
 import 'package:flutter/material.dart';
 
-class DocHBodyGridView extends StatelessWidget {
-  const DocHBodyGridView({super.key, required this.screen});
+class CommonBodyGridview extends StatelessWidget {
+  const CommonBodyGridview({super.key, required this.screen});
   final String screen;
 
   @override

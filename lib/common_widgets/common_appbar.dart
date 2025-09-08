@@ -1,10 +1,9 @@
-import 'package:doc_ui/doc.dart';
+import 'package:doc_ui/models/doc.dart';
 import 'package:doc_ui/doc_clippers.dart';
 import 'package:flutter/material.dart';
 
-class DocAppBar extends StatelessWidget {
-  const DocAppBar({super.key, required this.color});
-
+class CommonAppbar extends StatelessWidget {
+  const CommonAppbar({super.key, required this.color});
   final Color color;
 
   @override

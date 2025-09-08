@@ -1,13 +1,13 @@
-import 'package:doc_ui/common_widgets/doc_appbar.dart';
-import 'package:doc_ui/common_widgets/doc_navbar.dart';
-import 'package:doc_ui/doc.dart';
-import 'package:doc_ui/doc_details/docd_blue_body.dart';
-import 'package:doc_ui/doc_details/docd_recent_text.dart';
-import 'package:doc_ui/doc_details/docd_white_body.dart';
+import 'package:doc_ui/common_widgets/common_appbar.dart';
+import 'package:doc_ui/common_widgets/common_navbar.dart';
+import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/widgets/details_widgets/details_blue_body.dart';
+import 'package:doc_ui/widgets/details_widgets/details_recent_text.dart';
+import 'package:doc_ui/widgets/details_widgets/details_white_body.dart';
 import 'package:flutter/material.dart';
 
-class DocDetailsScreen extends StatelessWidget {
-  const DocDetailsScreen({super.key});
+class DetailsScreen extends StatelessWidget {
+  const DetailsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +20,9 @@ class DocDetailsScreen extends StatelessWidget {
           // AppBar
           const SizedBox(
             height: kToolbarHeight + 60,
-            child: DocAppBar(color: ashDark),
+            child: CommonAppbar(color: ashDark),
           ),
-          const DocDRecentText(),
+          const DetailsRecentText(),
           Expanded(
             child: Stack(
               clipBehavior: Clip.none,
@@ -33,7 +33,7 @@ class DocDetailsScreen extends StatelessWidget {
                   right: 0,
                   bottom: 0,
                   height: size.height * .415,
-                  child: const DocDBlueBody(),
+                  child: const DetailsBlueBody(),
                 ),
                 // white body
                 Positioned(
@@ -41,7 +41,7 @@ class DocDetailsScreen extends StatelessWidget {
                   left: 0,
                   right: 0,
                   height: size.height * .58,
-                  child: const DocDWhiteBody(),
+                  child: const DetailsWhiteBody(),
                 ),
               ],
             ),
@@ -49,7 +49,7 @@ class DocDetailsScreen extends StatelessWidget {
         ],
       ),
       extendBody: true,
-      bottomNavigationBar: DocNavBar(
+      bottomNavigationBar: CommonNavbar(
         screen: 'details',
         navColor: blueDark,
         floatBackColor: blueDark,

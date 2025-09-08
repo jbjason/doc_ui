@@ -1,10 +1,10 @@
-import 'package:doc_ui/common_widgets/doc_body_gridview.dart';
-import 'package:doc_ui/doc.dart';
+import 'package:doc_ui/common_widgets/common_body_gridview.dart';
+import 'package:doc_ui/models/doc.dart';
 import 'package:doc_ui/doc_clippers.dart';
 import 'package:flutter/material.dart';
 
-class DocDWhiteBody extends StatelessWidget {
-  const DocDWhiteBody({super.key});
+class DetailsWhiteBody extends StatelessWidget {
+  const DetailsWhiteBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class DocDWhiteBody extends StatelessWidget {
                   ],
                 ),
               ),
-              child: const DocHBodyGridView(screen: 'det'),
+              child: const CommonBodyGridview(screen: 'det'),
             ),
           ),
         ),

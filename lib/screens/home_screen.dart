@@ -1,8 +1,8 @@
-import 'package:doc_ui/common_widgets/doc_appbar.dart';
-import 'package:doc_ui/common_widgets/doc_navbar.dart';
-import 'package:doc_ui/doc.dart';
-import 'package:doc_ui/doc_home/doch_blue_body.dart';
-import 'package:doc_ui/doc_home/doch_white_body.dart';
+import 'package:doc_ui/common_widgets/common_appbar.dart';
+import 'package:doc_ui/common_widgets/common_navbar.dart';
+import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/widgets/home_widgets/home_blue_body.dart';
+import 'package:doc_ui/widgets/home_widgets/home_white_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
           // AppBar
           const SizedBox(
             height: kToolbarHeight + 60,
-            child: DocAppBar(color: blueMDark),
+            child: CommonAppbar(color: blueMDark),
           ),
           // body
           Expanded(
@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                   left: 0,
                   right: 0,
                   height: size.height * .4,
-                  child: const DocHBlueBody(),
+                  child: const HomeBlueBody(),
                 ),
                 // white body
                 Positioned(
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                   height: size.height * .7,
                   left: 0,
                   right: 0,
-                  child: const DocHWhiteBody(),
+                  child: const HomeWhiteBody(),
                 ),
                 // bottom White Shadow
                 Positioned(
@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       extendBody: true,
-      bottomNavigationBar: const DocNavBar(
+      bottomNavigationBar: const CommonNavbar(
         screen: 'home',
         navColor: ashDark,
         floatShadow: [Colors.white, dFloatColor],

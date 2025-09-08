@@ -1,13 +1,13 @@
-import 'package:doc_ui/common_widgets/doc_float_button.dart';
-import 'package:doc_ui/doc.dart';
+import 'package:doc_ui/common_widgets/common_float_button.dart';
+import 'package:doc_ui/models/doc.dart';
 import 'package:doc_ui/doc_clippers.dart';
-import 'package:doc_ui/doc_details/doc_details_screen.dart';
+import 'package:doc_ui/screens/details_screen.dart';
 import 'package:doc_ui/screens/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class DocNavBar extends StatelessWidget {
-  const DocNavBar(
+class CommonNavbar extends StatelessWidget {
+  const CommonNavbar(
       {super.key,
       required this.floatShadow,
       required this.navColor,
@@ -66,7 +66,7 @@ class DocNavBar extends StatelessWidget {
                             ? Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (_) => const DocDetailsScreen()))
+                                    builder: (_) => const DetailsScreen()))
                             : null;
                       },
                       child:
@@ -80,7 +80,7 @@ class DocNavBar extends StatelessWidget {
           Positioned(
             top: -22,
             left: size.width / 2 - 43,
-            child: DocFloatButton(
+            child: CommonFloatButton(
               floatBackColor: floatBackColor,
               floatColor: floatColor,
               floawShadow: floatShadow,

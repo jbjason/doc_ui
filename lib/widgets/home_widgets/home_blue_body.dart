@@ -1,15 +1,15 @@
-import 'package:doc_ui/doc.dart';
-import 'package:doc_ui/doc_home/doch_search_field.dart';
+import 'package:doc_ui/models/doc.dart';
+import 'package:doc_ui/widgets/home_widgets/home_search_field.dart';
 import 'package:flutter/material.dart';
 
-class DocHBlueBody extends StatelessWidget {
-  const DocHBlueBody({super.key});
+class HomeBlueBody extends StatelessWidget {
+  const HomeBlueBody({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const DocHSearchField(),
+        const HomeSearchField(),
         const SizedBox(height: 20),
         Expanded(
           child: Row(
