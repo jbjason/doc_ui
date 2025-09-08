@@ -55,11 +55,14 @@ class CmNavbar extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (_) => const HomeScreen()));
                       },
-                      child: Image.asset(MyImage.homeImg,
-                          color: MyColor.buttonColor,
-                          width: 30,
-                          height: 30,
-                          fit: BoxFit.contain),
+                      child: !isTrue
+                          ? Icon(CupertinoIcons.home,
+                              color: MyColor.buttonColor)
+                          : Image.asset(MyImage.homeImg,
+                              color: MyColor.buttonColor,
+                              width: 30,
+                              height: 30,
+                              fit: BoxFit.contain),
                     ),
                     const SizedBox(width: 1),
                     InkWell(
@@ -71,7 +74,10 @@ class CmNavbar extends StatelessWidget {
                                     builder: (_) => const DetailsScreen()))
                             : null;
                       },
-                      child: const Icon(CupertinoIcons.clock,
+                      child: Icon(
+                          isTrue
+                              ? CupertinoIcons.clock
+                              : CupertinoIcons.clock_fill,
                           color: MyColor.buttonColor),
                     ),
                   ],
